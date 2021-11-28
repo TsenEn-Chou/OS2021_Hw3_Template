@@ -52,7 +52,7 @@ void CreateContext(ucontext_t *context, ucontext_t *next_context, void *func)
 void ResetTimer()
 {
     Signaltimer.it_value.tv_sec = 0;
-    Signaltimer.it_value.tv_usec = 1000;
+    Signaltimer.it_value.tv_usec = 0;
     if(setitimer(ITIMER_REAL, &Signaltimer, NULL) < 0)
     {
         printf("ERROR SETTING TIME SIGALRM!\n");

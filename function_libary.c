@@ -48,6 +48,7 @@ void Function4(void)
 {
     while(1)
     {
+        OS2021_ThreadSetEvent(6);
         OS2021_ThreadWaitTime(1234);
         fprintf(stdout,"I found 65409.\n");
         fflush(stdout);
