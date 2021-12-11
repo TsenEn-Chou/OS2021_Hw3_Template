@@ -4,7 +4,7 @@ struct itimerval Signaltimer;
 ucontext_t dispatch_context;
 ucontext_t timer_context;
 
-int OS2021_ThreadCreate(char *job_name, char *p_function, int priority, int cancel_mode)
+int OS2021_ThreadCreate(char *job_name, char *p_function, char *priority, int cancel_mode)
 {
     return -1;
 }
