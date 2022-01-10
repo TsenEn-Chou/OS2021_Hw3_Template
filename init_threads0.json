@@ -1,0 +1,34 @@
+{
+	"Threads":[
+		{
+			"name" : "Trigger",
+			"entry function" : "Function4",
+			"priority": "H",
+			"cancel mode": "0"
+		},
+		{
+			"name" : "W1_odd",
+			"entry function" : "Function3",
+			"priority": "M",
+			"cancel mode": "0"
+		},
+		{
+			"name" : "W2_odd",
+			"entry function" : "Function3",
+			"priority": "L",
+			"cancel mode": "0"
+		},
+		{
+			"name" : "W1_even",
+			"entry function" : "Function5",
+			"priority": "L",
+			"cancel mode": "0"
+		},
+		{
+			"name" : "W2_even",
+			"entry function" : "Function5",
+			"priority": "L",
+			"cancel mode": "0"
+		}
+	]
+}
