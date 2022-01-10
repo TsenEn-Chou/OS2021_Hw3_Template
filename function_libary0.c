@@ -28,18 +28,20 @@ void Function1(void)
 void Function2(void) 
 {
 	int the_num;
-
-	int min = 65408;
-	int max = 65410;
-	
+    int min = 65405;
+    int max = 65410;
+    int flag = 0;
 	while (1) 
 	{
-        x++;
-		if(x == 654090)
+	    srand((unsigned)time(NULL));
+		(!flag) ? the_num = rand() % (max - min + 1) + min: (the_num=0) ;
+		if(the_num == 65409)
 		{
+            flag = 1;
+			fprintf(stdout,"I found 65409.\n");
+			fflush(stdout);
 			OS2021_ThreadSetEvent(3);
-			min = 1;
-			max = 10;
+
 		}
 		OS2021_TestCancel();
 	}
