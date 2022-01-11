@@ -7,25 +7,25 @@
 			"cancel mode": "0"
 		},
 		{
-			"name" : "W1_odd",
+			"name" : "W1odd",
 			"entry function" : "Function3",
 			"priority": "M",
 			"cancel mode": "0"
 		},
 		{
-			"name" : "W2_odd",
+			"name" : "W2odd",
 			"entry function" : "Function3",
 			"priority": "L",
 			"cancel mode": "0"
 		},
 		{
-			"name" : "W1_even",
+			"name" : "W3even",
 			"entry function" : "Function5",
 			"priority": "L",
 			"cancel mode": "0"
 		},
 		{
-			"name" : "W2_even",
+			"name" : "W4even",
 			"entry function" : "Function5",
 			"priority": "L",
 			"cancel mode": "0"
