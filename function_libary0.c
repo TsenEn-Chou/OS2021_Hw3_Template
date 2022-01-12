@@ -51,29 +51,18 @@ void Function3(void)
     {
         OS2021_ThreadWaitEvent(odd);
         odd +=2;
-        if( odd == 9 )
-        {
-            while (1);
-        }
+        while( odd == 9 );
     }
 }
 
 void Function4(void)
 {
-    int odd = 1;
-    int even = 2;
+    int event = 1;
     while(1)
     {
         OS2021_ThreadWaitTime(100);
-        OS2021_ThreadSetEvent(odd);
-        odd += 2;
-        OS2021_ThreadWaitTime(100);
-        OS2021_ThreadSetEvent(even);
-        even += 2;
-        if( odd == 9 && even == 10)
-        {
-            while (1);
-        }
+        OS2021_ThreadSetEvent(event++);
+        while (event == 9);
     }
 }
 
@@ -84,10 +73,7 @@ void Function5(void)
     {
         OS2021_ThreadWaitEvent(even);
         even +=2;
-        if( even == 10 )
-        {
-            while (1);
-        }
+        while (even == 10);
     }
 }
 
